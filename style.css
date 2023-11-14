@@ -1,12 +1,39 @@
-/* :root{
-    --espaco-padrao: 
-} */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
+
 body {
-    background-color: black;
+    background-color: rgb(15, 15, 15);
+   
 }
+/* botões */
+
+.btn-custom-white{
+    background-color: white;
+}
+.btn-custom-translucent{
+    background-color: rgb(255, 255, 255,0.2);
+    color: white;
+    margin-left: 5px;
+}
+.btn-custom-white:hover{
+    color: white;
+    opacity: 0.8;
+    border: 1px solid;
+
+}
+.btn-custom-translucent:hover{
+    color: white;
+    opacity: 0.8;
+    border: 1px solid;
+
+}
+
+
+/* LOGIN */
+
+
 
 body.bg_filmes {
     background-image: url(./assets/animaflix.jpg);
@@ -15,9 +42,8 @@ body.bg_filmes {
     margin: 0;
     padding: 0;
     
-    
-    
 }
+
 
 .logo {
     display: flex;
@@ -98,3 +124,73 @@ a{
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
 }
+
+
+/* HOME */
+
+
+.lista-header{
+    list-style: none;
+    padding: 25px;
+    margin-right: 35px;
+    display: flex;
+    gap:25px;
+    
+}
+.lista-header li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.lista-header li a:hover{
+    color:rgb(163, 157, 157);
+   
+    transition: 0.8;
+}
+.logo-home img{
+    height: 90px;
+    padding: 25px;
+    
+}
+
+.header{
+    height: 100px;
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.69)0%,
+            rgba(0, 0, 0, 0)100%);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width:100%;
+    top:0;
+    z-index: 2;
+}
+#hero{
+    
+    height: 700px;
+    background-image: url("./assets/capa-filme.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top:0;
+    
+}
+#hero_infos{
+    padding:0;
+    margin-top: 170px;
+    z-index:3;
+    position: relative;
+}
+.infos-top img{
+    margin-bottom: 15px;
+}
+.infos-top h1{
+    margin-bottom: 10px;
+}
+.infos-top h1 img{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+
