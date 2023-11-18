@@ -234,12 +234,16 @@ a{
     padding: 20px 0;
     display:block;
 }
+.filme_list::-webkit-scrollbar{
+    display: none;
+}
 .filme{
     display: inline-block;
     width: 250px;
     margin-right: 10px;
     border-radius:3px;
     overflow: hidden;
+    overflow-y: hidden;
 }
 .filme:hover{
     cursor:pointer;
@@ -274,3 +278,10 @@ a{
 .filme-info p text{
     color:#fff;
 }
+section{
+    margin-bottom: -100px;
+}
+section:hover{
+    z-index: 9;
+}
+/* scrollbar */
