@@ -284,4 +284,29 @@ section{
 section:hover{
     z-index: 9;
 }
-/* scrollbar */
+/* modal */
+
+.modal-content{
+    background-color:#171717;
+    border-radius: 5px;
+}
+.modal-header{
+    padding:0;
+}
+.img_filme{
+    background-image: url(./assets/filmes-series/django.jpg) ;
+    width: 100%;
+    height: 350px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
+}
+.modal-header-infos{
+    margin-top: 290px;
+   
+}
+.info_filmes div{
+    color:white;
+}
