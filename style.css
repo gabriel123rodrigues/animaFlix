@@ -1,42 +1,69 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 
 body {
     background-color: rgb(15, 15, 15);
-   
+
 }
+
 /* botões */
 
-.btn-custom-white{
+.btn-custom-white {
     background-color: white;
 }
-.btn-custom-translucent{
-    background-color: rgb(255, 255, 255,0.2);
+
+.btn-custom-translucent {
+    background-color: rgb(255, 255, 255, 0.2);
     color: white;
     margin-left: 5px;
 }
-.btn-custom-white:hover{
+
+.btn-custom-white:hover {
     color: white;
     opacity: 0.8;
     border: 1px solid;
 
 }
-.btn-custom-translucent:hover{
+
+.btn-custom-translucent:hover {
     color: white;
     opacity: 0.8;
     border: 1px solid;
 
 }
-.btn-custon-round{
+
+.btn-custon-round {
     padding: 5px 9px !important;
-   
-}
-.opacity-50{
-    opacity:0.5;
+
 }
 
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.container-filme-list {
+    position: absolute;
+}
+
+.button-slide {
+    display: flex;
+   
+    opacity: 0.2;
+    justify-content: space-between;
+    position: absolute;
+
+    z-index: 1;
+}
+
+.btn-slide {
+    border-radius: 10px;
+    display: flex;
+    height: 150px;
+
+
+
+
+}
 
 
 /* LOGIN */
@@ -49,7 +76,7 @@ body.bg_filmes {
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    
+
 }
 
 
@@ -61,9 +88,10 @@ body.bg_filmes {
             rgba(0, 0, 0, 0)100%);
 }
 
-#logo{
-    padding:20px;
+#logo {
+    padding: 20px;
 }
+
 .container-login {
     display: flex;
     justify-content: center;
@@ -99,11 +127,12 @@ h3 {
     margin-bottom: 10px;
 
 }
-::placeholder{
+
+::placeholder {
     font-family: 'Roboto', sans-serif;
     color: rgb(228, 219, 219);
-    padding-left:10px;
-    font-size:15px ;
+    padding-left: 10px;
+    font-size: 15px;
 }
 
 .element {
@@ -115,9 +144,11 @@ h3 {
     font-family: 'Roboto', sans-serif;
 
 }
-a{
+
+a {
     color: grey;
 }
+
 .button {
     display: flex;
     color: white;
@@ -137,32 +168,35 @@ a{
 /* HOME */
 
 
-.lista-header{
+.lista-header {
     list-style: none;
     padding: 25px;
     margin-right: 35px;
     display: flex;
-    gap:25px;
-    
-    
+    gap: 25px;
+
+
 }
-.lista-header li a{
+
+.lista-header li a {
     color: white;
     text-decoration: none;
     font-size: 15px;
 }
-.lista-header li a:hover{
-    color:rgb(163, 157, 157);
-   
+
+.lista-header li a:hover {
+    color: rgb(163, 157, 157);
+
     transition: 0.8;
 }
-.logo-home img{
+
+.logo-home img {
     height: 90px;
     padding: 25px;
-    
+
 }
 
-.header{
+.header {
     height: 100px;
     background: linear-gradient(180deg,
             rgba(0, 0, 0, 0.69)0%,
@@ -170,207 +204,246 @@ a{
     display: flex;
     justify-content: space-between;
     position: absolute;
-    width:90%;
-    top:0;
+    width: 90%;
+    top: 0;
     z-index: 2;
 }
-#hero{
-    
+
+#hero {
+
     height: 700px;
     background-image: url("./assets/capa-filme.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     z-index: 1;
-    top:0;
-    
+    top: 0;
+
 }
 
-#hero::after{
+#hero::after {
 
-    content:'';
+    content: '';
     width: 100%;
-    height:350px;
-    display:block;
+    height: 350px;
+    display: block;
     background: linear-gradient(180deg,
-    rgba(0, 0, 0, 0 )0%,
-    #000000 100%);
+            rgba(0, 0, 0, 0)0%,
+            #000000 100%);
     position: absolute;
     left: 0;
     z-index: 2;
-    top:calc(700px - 350px);
+    top: calc(700px - 350px);
 
 }
-#hero_infos{
-    padding:0;
+
+#hero_infos {
+    padding: 0;
     margin-top: 170px;
-    z-index:3;
+    z-index: 3;
     position: relative;
 }
-.infos-top img{
+
+.infos-top img {
     margin-bottom: 15px;
 }
-.infos-top h1{
+
+.infos-top h1 {
     margin-bottom: 10px;
 }
-.infos-top h1 img{
+
+.infos-top h1 img {
     margin-right: 15px;
     margin-top: 10px;
 }
+
 /* lista de filmes */
-.main-content{
+.main-content {
     margin-top: 700px;
 }
-.main-content h5{
-    color:white;
+
+.main-content h5 {
+    color: white;
     margin-top: 15px;
 }
 
-.filme_list{
+.filme_list {
     overflow-x: scroll;
-    list-style:none;
+    list-style: none;
     padding: 0;
     white-space: nowrap;
     padding: 20px 0;
-    display:block;
+    display: block;
+
+
 }
-.filme_list::-webkit-scrollbar{
+
+.filme_list::-webkit-scrollbar {
     display: none;
 }
-.filme{
+
+.filme {
+    position: relative;
     display: inline-block;
     width: 250px;
     margin-right: 10px;
-    border-radius:3px;
+    border-radius: 3px;
     overflow: hidden;
     overflow-y: hidden;
 }
-.filme:hover{
-    cursor:pointer;
+
+.filme:hover {
+    cursor: pointer;
     transform: scale(1.2);
     z-index: 999;
-    transition:0.8s;
+    transition: 0.8s;
 }
-.filme:hover .filme-info{
+
+.filme:hover .filme-info {
     transform: scale(1);
     transition: 0.8s;
 }
-.filme:first-child{
+
+.filme:first-child {
     margin-left: 65px;
 }
-.filme-info{
+
+.filme-info {
     background-color: #171717;
     padding: 10px;
     height: 100px;
     width: 100%;
     transform: scale(0);
 }
-.filme-info .col-12{
-    margin-top: 5px; 
+
+.filme-info .col-12 {
+    margin-top: 5px;
 }
-.filme-info .col-12:first-child{
+
+.filme-info .col-12:first-child {
     margin-bottom: 20px;
 }
-.filme-info p{
+
+.filme-info p {
     color: #7E7B7B;
     font-size: 12px;
 }
-.filme-info p text{
-    color:#fff;
+
+.filme-info p text {
+    color: #fff;
 }
-section{
+
+section {
     margin-bottom: -100px;
 }
-section:hover{
+
+section:hover {
     z-index: 9;
 }
+
 /* modal */
 
-.modal-dialog{
+.modal-dialog {
     max-width: 800px;
-    
+
 }
-.modal-content{
-    background-color:#171717;
+
+.modal-content {
+    background-color: #171717;
     border-radius: 5px;
 }
-.modal-header{
-    padding:0;
+
+.modal-header {
+    padding: 0;
 }
-.img_filme{
-    background-image: url(./assets/capa-filme.png) ;
+
+.img_filme {
+    background-image: url(./assets/capa-filme.png);
     width: 100%;
     height: 350px;
     margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.modal-header::after{
+
+.modal-header::after {
     content: '';
     width: 100%;
     height: 200px;
     display: block;
     background: linear-gradient(180deg,
-    rgba(0, 0, 0, 0 )0%,
-    #000000 100%);
-    position:absolute;
+            rgba(0, 0, 0, 0)0%,
+            #000000 100%);
+    position: absolute;
     margin-top: 150px;
     left: 0;
     z-index: 1;
 }
-.modal-header-infos{
+
+.modal-header-infos {
     margin-top: 50px;
     z-index: 2;
-   
+
 }
-.modal-body{
+
+.modal-body {
     margin-left: 30px;
 }
-.info_filmes div{
-    color:white;
+
+.info_filmes div {
+    color: white;
 }
-.img_filme img{
+
+.img_filme img {
     width: 300px;
     height: 150px;
     margin-top: 50px;
     position: relative;
 }
 
-.modal-header-infos button:first-child{
+.modal-header-infos button:first-child {
     margin-left: 30px;
 }
-.filme_descricao{
+
+.filme_descricao {
     font-size: 15px;
-    color:white;
-    
+    color: white;
+
 }
-.filme_elenco p, .descricao{
+
+.filme_elenco p,
+.descricao {
     font-size: 13px;
     color: rgb(255, 255, 255, 0.5);
     margin-bottom: 5px;
 }
-.filme_elenco text{
-    color:white;
+
+.filme_elenco text {
+    color: white;
 }
 
 .lista-episodios {
     margin-right: 30px;
     margin-top: 20px;
 }
-.temporadas{
+
+.temporadas {
     width: 150px;
 }
-.lista-episodios{
+
+.lista-episodios {
     margin-left: 20px;
 }
+
 /* .lista-episodios img{
     width: 200px;
     height: 150px;
 } */
-#episodio{
+#episodio {
     padding: 15px;
 }
-#episodio:hover{
+
+#episodio:hover {
     cursor: pointer;
     background-color: rgba(255, 249, 249, 0.1);
     transition: 0.8s;
