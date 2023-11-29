@@ -1,0 +1,12 @@
+[
+    {
+    "titulo": "A nova onda do imperador",
+    "tipo": "serie",
+    "capa": "www",
+    "logo": "logo",
+    "descricao":"animação",
+    "generos": "desenho",
+    "elenco":["atores"],
+    "cenas_momentos":["qualque coisa"]
+    }
+]
